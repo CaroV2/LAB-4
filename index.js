@@ -7,7 +7,7 @@ button.addEventListener('click', (e) => {
 })
 
 function getCharacter(){
-    fetch('https://rickandmortyapi.com/api/character/2')
+    fetch('https://rickandmortyapi.com/api/character/?id')
     //.then(res => console.log(res)); Si recibe la información
     .then((res) => res.json())
     .then((data) => {
